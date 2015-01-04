@@ -1,8 +1,10 @@
 package threadTest.playDice;
 
 public class RecordDiceThread implements Runnable {
-	private Dice dice = null;
+	protected Dice dice = null;
 
+	public RecordDiceThread() {
+	}
 	public RecordDiceThread(Dice d) {
 		this.dice = d;
 	}

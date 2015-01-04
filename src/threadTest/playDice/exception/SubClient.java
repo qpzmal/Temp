@@ -13,8 +13,8 @@ public class SubClient {
 	
 	public static void main(String[] args) {
 		Dice dice = new SubDice();// 骰子类
-		Thread p = new Thread(new PlayDiceThread(dice));// 掷骰子类
-		Thread r = new Thread(new RecordDiceThread(dice));// 记录骰子类
+		Thread p = new Thread(new SubPlayDiceThread(dice));// 掷骰子类
+		Thread r = new Thread(new SubRecordDiceThread(dice));// 记录骰子类
 
 		p.start();
 		r.start();

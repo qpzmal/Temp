@@ -8,8 +8,8 @@ import java.util.Random;
  *
  */
 public class Dice {
-	private int number = 0;
-	private int count = 0;
+	protected int number = 0;
+	protected int count = 0;
 
 	public synchronized void setNumber() throws Exception {
 		if (count == 3) {
