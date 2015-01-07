@@ -1,5 +1,13 @@
 package extendTest.shuxing;
 
+/**
+ * 测试子类能否覆盖父类属性
+ * 结论：
+ *    1.属性：声明为哪个类，就取哪个类属性，与实例化对象无关；
+ *    2.无重写方法时：调用父类方法，取父类属性；
+ *    3.有重写方法时：调用子类方法，取子类属性；
+ * 
+ */
 public class TestShuxing {
 
 	public static void main(String[] args) {
